@@ -10,7 +10,7 @@ model_scratch, model_pretrained, model_cbam = load_models()
 class_names = ['glioma', 'meningioma', 'notumor', 'pituitary']
 
 # Function to predict
-def predict(model, image_tensor, class_names):
+def predict(model, image_tensor):
     with torch.no_grad():
         output = model(image_tensor)
         _, predicted_class = torch.max(output, 1)
