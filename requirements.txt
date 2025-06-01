@@ -1,10 +1,11 @@
-torch
-torchvision
+torch==2.0.1
+torchvision==0.15.2
 torchcam
-numpy==1.26.4
-pillow==10.1.0
+numpy==1.24.3
+pillow==9.5.0
 matplotlib==3.8.4
 scikit-learn==1.4.0
-opencv-python==4.9.0.80
+opencv-python==4.7.0.72
 tqdm==4.66.2
 pennylane==0.35.0
+streamlit==1.21.0
