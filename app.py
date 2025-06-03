@@ -39,7 +39,7 @@ def main():
             image_tensor, image = load_image(file_path)
 
             # Display uploaded image
-            st.image(image, caption="Uploaded MRI Image", use_container_width=True)
+            st.image(image, caption="Uploaded MRI Image")
 
             st.markdown("---")
             st.subheader("Predictions from All Models")
