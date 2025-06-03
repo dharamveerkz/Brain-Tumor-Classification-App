@@ -50,16 +50,19 @@ def main():
             with col1:
                 st.markdown("### ResNet-18 (Scratch)")
                 prediction = predict(model_scratch, image_tensor)
+                st.image(image, caption="Uploaded MRI Image")
                 st.success(f"Predicted: {prediction.upper()}")
 
             with col2:
                 st.markdown("### ResNet-18 (Pretrained)")
                 prediction = predict(model_pretrained, image_tensor)
+                st.image(image, caption="Uploaded MRI Image")
                 st.success(f"Predicted: {prediction.upper()}")
 
             with col3:
                 st.markdown("### ResNet-18 + CBAM")
                 prediction = predict(model_cbam, image_tensor)
+                st.image(image, caption="Uploaded MRI Image")
                 st.success(f"Predicted: {prediction.upper()}")
 
         except Exception as e:
