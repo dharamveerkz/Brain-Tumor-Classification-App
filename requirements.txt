@@ -1,11 +1,11 @@
 torch==2.0.1
 torchvision==0.15.2
-torchcam
+torchcam>=0.3.3
 numpy==1.24.3
 pillow==9.5.0
 matplotlib==3.8.4
 scikit-learn==1.4.0
-opencv-python-headless
+opencv-python-headless==4.8.1.78
 tqdm==4.66.2
 pennylane==0.35.0
-streamlit==1.21.0
+streamlit>=1.35.0
